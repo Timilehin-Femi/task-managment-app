@@ -11,10 +11,7 @@ export default function TaskItem({
 }) {
   return (
     <div className="Todo">
-      <p
-        className={`${task.completed ? "completed" : ""}`}
-        onClick={() => toggleComplete(task.id)}
-      >
+      <p className={`${task.completed ? "completed" : ""}`} onClick={() => toggleComplete(task.id)} >
         {task.task}
       </p>
       <div>

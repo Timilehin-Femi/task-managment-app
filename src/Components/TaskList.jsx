@@ -10,10 +10,7 @@ export default function TaskList(){
   const [todos, setTodos] = useState([]);
 
   const addTodo = (todo) => {
-    setTodos([
-      ...todos,
-      { id: uuidv4(), task: todo, completed: false, isEditing: false },
-    ]);
+    setTodos([...todos, { id: uuidv4(), task: todo, completed: false, isEditing: false },]);
   }
 
   const deleteTodo = (id) => setTodos(todos.filter((todo) => todo.id !== id));
